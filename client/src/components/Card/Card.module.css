@@ -1,0 +1,44 @@
+.cardImage {
+    border-radius: 20px;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    width: 70%;
+}
+
+.card {
+    margin: 30px;
+    background: rgba(1, 1, 1, 0.398);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(1, 1, 1, 0.17);
+    transition: 0.3s;
+}
+
+.card:hover {
+    margin: 30px;
+    background: rgba(1, 1, 1, 0.609);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(1, 1, 1, 0.17);
+}
+
+.cardButton {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex; 
+}
+
+.cardSpecs {
+    display: flex;
+}
+
+@media screen and (max-width: 460px) {
+    .card {
+        width: 60%;
+    }
+}
