@@ -35,7 +35,7 @@ const Favorites = ({ myFavorites }) => {
       <div className={Styles.favorites}>
         {myFavorites.length &&
           myFavorites.map(
-            ({ id, name, status, species, origin, image, gender, onClose }) => {
+            ({ id, name, status, species, origin, image, gender }) => {
               return (
                 <Card
                   key={id}
@@ -46,7 +46,7 @@ const Favorites = ({ myFavorites }) => {
                   origin={origin}
                   image={image}
                   gender={gender}
-                  onClose={onClose}
+                  onClose={() => {dispatch(removeFav(id));}}
                 />
               );
             }
